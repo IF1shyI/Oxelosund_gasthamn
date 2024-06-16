@@ -1,0 +1,239 @@
+:root{
+    --main_color_svart:#000000;
+    --main_color_gray:#393D3F;
+    --w:#FDFDFF;
+    --orange_alt:#FD644B;
+    --black:#000000;
+    --selected:#bda182;
+}
+
+
+/*      Body         */
+
+body{
+    background-color: var(--main_color_gray);
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*      Header       */
+
+header{
+    width: 100%;
+    background-color: var(--main_color_svart);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    height: 50%;
+}
+
+
+.logo{
+    display: grid;
+    grid-column: 1/4;
+    align-content: center;
+}
+
+
+.logo img{
+    width: 100%;
+    max-width: 250px;
+    margin: 2rem;
+
+}
+
+
+.header__flikbygg{
+    display: grid;
+    justify-content: center;
+    align-content: space-around;
+    border-radius: 10px 10px 0 0;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.2lh;
+    height: 100%;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+    cursor: pointer;
+}
+
+.header__resturang{
+    display: grid;
+    grid-column: 6/7;
+}
+
+.header__hem{
+    display: grid;
+    grid-column: 7/8;
+}
+
+.header__event{
+    display: grid;
+    grid-column: 8/9;
+}
+
+.header__kontakt{
+    display: grid;
+    grid-column: 9/10;
+}
+
+a{
+  text-decoration: none;
+  color: var(--w);
+}
+
+.aktuellflik{
+  color: var(--selected);
+}
+
+.header__flikbygg:hover{
+    text-decoration: underline;
+}
+
+
+/*      Text        */
+
+.text {
+    align-items: center; /* Center vertically */
+}
+.index__text{
+    font-size: 1.5em;
+    color: var(--w);
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+    padding: 0px;
+    cursor:default;
+}
+
+h1{
+    margin-top: 50px;
+    font-size: 3rem;
+    color: var(--selected);
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+}
+
+.info__service{
+    margin-top: 6rem;
+}
+
+/*      Boka grid      */
+
+.boka__grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    margin: 0 20px;
+}
+
+.boka__hamnen{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-color: var(--orange_alt);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.boka__dockspot{
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-color: var(--orange_alt);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.text__boka{
+    font-size: 1.5em;
+    color: var(--w);
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+/*      Footer      */
+
+footer {
+    background-color: var(--black);
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    font-family: "Poetsen One", sans-serif;
+  
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+  
+      .footer-section {
+        flex: 1;
+        min-width: 200px;
+        margin: 20px 0;
+  
+        h2 {
+          margin-bottom: 15px;
+        }
+  
+        p,
+        ul {
+          font-size: 14px;
+          line-height: 1.6;
+        }
+  
+        ul {
+          list-style: none;
+          padding: 0;
+  
+          li {
+            margin-bottom: 10px;
+  
+            a {
+              color: #fff;
+              text-decoration: none;
+              transition: color 0.3s;
+  
+              &:hover {
+                color: #F18701;
+              }
+            }
+          }
+        }
+  
+        .socials a {
+          display: inline-block;
+          margin-right: 10px;
+          transition: opacity 0.3s;
+  
+          img {
+            width: 24px;
+            height: 24px;
+          }
+  
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+  
+      p {
+        margin: 0;
+      }
+    }
+  }
