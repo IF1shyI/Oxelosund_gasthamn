@@ -11,13 +11,18 @@
 </head>
 <body>
     <header>
-        <a href="./index.html" class="logo"><img src=https://i0.wp.com/oxelosundsgasthamn.wpcomstaging.com/wp-content/uploads/2023/07/oxelosunds-gasthamn-logo.jpg?fit=350%2C100&ssl=1 alt="logo.png"></a>
-        <a href="./Sidor/Resturang/resturang.html" class="header__resturang header__flikbygg">Resturangen</a>
-        <a href="./index.html" class="header__hem header__flikbygg aktuellflik">Hem</a>
-        <a href="" class="header__flikbygg header__event">Event</a>
-        <a href="./Sidor/Kontakt/kontakt.html" class="header__flikbygg header__kontakt">Kontakt</a>
-        
-    </header>   
+        <a href="./index.html" class="logo">
+            <img src="https://i0.wp.com/oxelosundsgasthamn.wpcomstaging.com/wp-content/uploads/2023/07/oxelosunds-gasthamn-logo.jpg?fit=350%2C100&ssl=1" alt="logo.png">
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav class="menu">
+            <a href="./Sidor/Resturang/resturang.html" class="header__resturang header__flikbygg">Resturangen</a>
+            <a href="./index.html" class="header__hem header__flikbygg aktuellflik">Hem</a>
+            <a href="" class="header__flikbygg header__event">Event</a>
+            <a href="./Sidor/Kontakt/kontakt.html" class="header__flikbygg header__kontakt">Kontakt</a>
+        </nav>
+    </header>
+    <script src="./Script/togglemenu.js"></script>   
 
     <section id="image-carousel" class="splide" aria-label="Beautiful Images">
         <div class="splide__track">
