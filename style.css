@@ -142,11 +142,11 @@ header {
 
 .text {
     align-items: center; /* Center vertically */
+    font-family: "Poetsen One", sans-serif;
 }
 .index__text{
     font-size: 1.5em;
     color: var(--w);
-    font-family: "Poetsen One", sans-serif;
     text-align: center;
     padding: 0px;
     cursor:default;
@@ -156,8 +156,15 @@ h1{
     margin-top: 50px;
     font-size: 3rem;
     color: var(--selected);
-    font-family: "Poetsen One", sans-serif;
     text-align: center;
+}
+
+h3{
+  margin-top: 50px;
+  font-size: 1.7rem;
+  font-family: sans-serif;
+  color: var(--w);
+  text-align: center;
 }
 
 .info__service{
