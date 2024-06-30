@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
       arrows:false,
       pagination: false,
       transition: 'fade', // Use fade transition
-      speed: 2000, // Duration of the transition in milliseconds
+      speed: 3000, // Duration of the transition in milliseconds
+      height: '400px'
+      
     });
   
     splide.mount(); // Mount the slider
