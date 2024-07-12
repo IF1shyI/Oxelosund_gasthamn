@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandskär Oxelösund | Oxelösunds Gästhamn</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
@@ -17,13 +17,56 @@
         </a>
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <nav class="menu">
-            <a href="./Sidor/Resturang/resturang.html" class="header__resturang header__flikbygg">Resturangen</a>
-            <a href="./index.html" class="header__hem header__flikbygg aktuellflik">Hem</a>
-            <a href="" class="header__flikbygg header__event">Event</a>
-            <a href="./Sidor/Kontakt/kontakt.html" class="header__flikbygg header__kontakt">Kontakt</a>
+            <a href="../Resturang/resturang.html" class="header__resturang header__flikbygg">Resturangen</a>
+            <a href="../../index.html" class="header__hem header__flikbygg">Hem</a>
+            <a href="./event.html" class="header__flikbygg header__event aktuellflik">Event</a>
+            <a href="../Kontakt/kontakt.html" class="header__flikbygg header__kontakt">Kontakt</a>
         </nav>
     </header>
-    <script src="../../Script/togglemenu.js"></script>
-
+    <section class="events-section">
+        <div class="events-header">
+            <h1>Events</h1>
+            <p>Vi lägger kontinuerligt upp nya event under säsongens gång!</p>
+            <p>I sommar kommer vi hålla flera event på vår restaurangkrog.</p>
+            <h2>Trubadurfton varje Onsdag!</h2>
+        </div>
+        <div class="events-grid">
+            <div class="event-card">
+                <img src="https://via.placeholder.com/250" alt="Rob Raz">
+                <h2>Rob Raz</h2>
+                <div class="event-date">5 Juli</div>
+            </div>
+            <div class="event-card">
+                <img src="https://via.placeholder.com/250" alt="Dogge Doggelito">
+                <h2>Dogge Doggelito</h2>
+                <div class="event-date">12 Juli</div>
+            </div>
+            <div class="event-card">
+                <img src="https://via.placeholder.com/250" alt="Jocke Langer och Papa Dee">
+                <h2>Jocke Langer och Papa Dee</h2>
+                <div class="event-date">19 Juli</div>
+            </div>
+            <div class="event-card">
+                <img src="https://via.placeholder.com/250" alt="Seipen">
+                <h2>Seipen</h2>
+                <div class="event-date">26 Juli</div>
+            </div>
+            <div class="event-card">
+                <img src="https://via.placeholder.com/250" alt="Labero">
+                <h2>Labero</h2>
+                <div class="event-date">2 Augusti</div>
+            </div>
+            <div class="event-card">
+                <img src="https://via.placeholder.com/250" alt="Labero">
+                <h2>Labero</h2>
+                <div class="event-date">Tittar in ibland</div>
+            </div>
+        </div>
+        <div class="extra-event">
+            <img src="https://via.placeholder.com/300" alt="After beach">
+            <p>After beach happy hour<br>Fredag den 4 Augusti kl 15.00-18.00</p>
+        </div>
+    </section>
+    <script src="Script/togglemenu.js"></script>
 </body>
 </html>

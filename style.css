@@ -550,3 +550,57 @@ input[type="submit"]:hover {
 
 /*      Event       */
 
+.event {
+  background-color: var(--w);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.event .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.event-title {
+  font-size: 3rem;
+  color: var(--selected);
+  margin-bottom: 30px;
+}
+
+.event-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background-color: var(--alt_gray);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.event-info {
+  text-align: left;
+  padding: 20px;
+}
+
+.event-name {
+  color: var(--main_color_svart);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.event-date, .event-description {
+  color: var(--main_color_gray);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.event-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .event-card {
+      grid-template-columns: 1fr;
+  }
+}
